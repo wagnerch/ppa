@@ -1,0 +1,356 @@
+Package: glibc-doc
+Source: glibc
+Version: 2.28-110.1
+Architecture: all
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 2996
+Suggests: glibc-doc-reference
+Filename: ./glibc-doc_2.28-110.1_all.deb
+Size: 3014028
+MD5sum: aaaec53bf15970e02957f9770a0874c5
+SHA1: 5b115625886ad79135db974b29c9c7371b27e25a
+SHA256: 2e8bbd3607f8b6a6d83280523bd19dc51806f58e37aa7ddf375e36de8e71e24f
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Documentation
+ Contains man pages for libpthread functions and the complete GNU C Library
+ ChangeLog.  The GNU C Library Reference manual has been moved into
+ glibc-doc-reference for licensing reasons.
+
+Package: glibc-source
+Source: glibc
+Version: 2.28-110.1
+Architecture: all
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 23498
+Recommends: xz-utils
+Conflicts: eglibc-source
+Breaks: cross-toolchain-base (<< 29~), cross-toolchain-base-ports (<< 25~)
+Replaces: eglibc-source
+Filename: ./glibc-source_2.28-110.1_all.deb
+Size: 18344632
+MD5sum: 11b423e34fcf7aedd7346845574b171a
+SHA1: b375bb06edb3c86ece03902a2597d2f99b299130
+SHA256: 1a8e3fac432a5fd40fe6af867f4a94a0c67259c02c9ff329c58a70329b8da065
+Section: devel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: sources
+ This package contains the sources and patches which are needed to
+ build glibc.
+
+Package: libc-bin
+Source: glibc
+Version: 2.28-110.1
+Architecture: armhf
+Essential: yes
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 2756
+Depends: libc6 (>> 2.28), libc6 (<< 2.29)
+Recommends: manpages
+Filename: ./libc-bin_2.28-110.1_armhf.deb
+Size: 665936
+MD5sum: 77581d22b83ef44e239ce71471afc5fa
+SHA1: b695b2c773b6a1f77c1742489a8d5597ce6ee6e2
+SHA256: 06cddd5c05a65c7a09da5284bba174b5ef0061930945801c6701db2e19dd98e5
+Section: libs
+Priority: required
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Binaries
+ This package contains utility programs related to the GNU C Library.
+ .
+  * catchsegv: catch segmentation faults in programs
+  * getconf: query system configuration variables
+  * getent: get entries from administrative databases
+  * iconv, iconvconfig: convert between character encodings
+  * ldd, ldconfig: print/configure shared library dependencies
+  * locale, localedef: show/generate locale definitions
+  * tzselect, zdump, zic: select/dump/compile time zones
+
+Package: libc-bin-dbgsym
+Source: glibc
+Version: 2.28-110.1
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 2684
+Depends: libc-bin (= 2.28-110.1)
+Filename: ./libc-bin-dbgsym_2.28-110.1_armhf.deb
+Size: 2494560
+MD5sum: 70315062c56204628aa3a64f019c7309
+SHA1: b04e8bcef3c754fa7b51ea5ac192c36e16c0a9c0
+SHA256: 5d34a4fc35f0f32a4ef3df7e283fcb19a1b16702e0fe70f92e18991054c8ec2e
+Section: debug
+Priority: optional
+Description: debug symbols for libc-bin
+Build-Ids: 188b46bd470e0b9434da169584e9afbd5045ff58 26567a795c72380b729a26343ee58efca32f0459 3a710d6441ca007691daba4019ab6b49ef9ed3c3 595d2bcfe7748dda115d9c34fd6fe79765800627 59bf04b21d457316443050ae66f69a6a645058f8 62a8d398e6b526efae53786dc5fa4fecdea26b98 7b2f3efc47fc0d088eda0e2fae402446e1f00856 c1a8b4f91e92ed135fd40c305c698078925bdf7a f8e58206ddf01b253c338507fca3f0383e275638 fca1c82b1e83cb2a6af623920ffbe5e7aba60324
+
+Package: libc-dev-bin
+Source: glibc
+Version: 2.28-110.1
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 363
+Depends: libc6 (>> 2.28), libc6 (<< 2.29)
+Recommends: manpages, manpages-dev
+Filename: ./libc-dev-bin_2.28-110.1_armhf.deb
+Size: 266996
+MD5sum: a779b56f56c8b1b5f433a93ff7b51868
+SHA1: 2cf788e344748261d6d07a47c2ebc6c486d443bb
+SHA256: db711a22e812ebe427abe6bf183279746787ebb614fd4c97d8d102434aa43584
+Section: libdevel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Development binaries
+ This package contains utility programs related to the GNU C Library
+ development package.
+
+Package: libc-dev-bin-dbgsym
+Source: glibc
+Version: 2.28-110.1
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 179
+Depends: libc-dev-bin (= 2.28-110.1)
+Filename: ./libc-dev-bin-dbgsym_2.28-110.1_armhf.deb
+Size: 147860
+MD5sum: 938e3146395ff204a594cf7f2342809a
+SHA1: 49481a4ecc3e52e3582ba428a1a5ca4dc623d326
+SHA256: 6d9635ac862a62ebc77bde5abc96075ab9d8ccbbbf09ff2081d9554c28c633b0
+Section: debug
+Priority: optional
+Description: debug symbols for libc-dev-bin
+Build-Ids: 32c8018d2a57e4567da04505bd8f4d871e2cadfd 495f11e6c8d636f0ee3935da3adfa6adcaabb8d0 d2e9b8160a07c25b6d0043fca6c2ac28fc78d876
+
+Package: libc-l10n
+Source: glibc
+Version: 2.28-110.1
+Architecture: all
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 4229
+Breaks: locales (<< 2.21-1)
+Replaces: locales (<< 2.21-1)
+Filename: ./libc-l10n_2.28-110.1_all.deb
+Size: 846212
+MD5sum: 2fa02abcdebd12aebf89386324338fac
+SHA1: 10835e82edf88f62dcc26aacda5a6b48a9ec6ac3
+SHA256: b8343cde54b7f7630e5d6ab707393f5daccdb0d74e94facd7c3fedeefcf32045
+Section: localization
+Priority: standard
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: localization files
+ This package contains the translation files for the GNU C library and
+ utility programs.
+
+Package: libc6
+Source: glibc
+Version: 2.28-110.1
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 8330
+Depends: libgcc1
+Recommends: libidn2-0 (>= 2.0.5~)
+Suggests: glibc-doc, debconf | debconf-2.0, libc-l10n, locales
+Conflicts: openrc (<< 0.27-2~)
+Breaks: hurd (<< 1:0.5.git20140203-1), libtirpc1 (<< 0.2.3), locales (<< 2.28), locales-all (<< 2.28), nocache (<< 1.1-1~), nscd (<< 2.28), r-cran-later (<< 0.7.5+dfsg-2)
+Filename: ./libc6_2.28-110.1_armhf.deb
+Size: 2388240
+MD5sum: 87ca6e11d1f9c98c18ecbec5ea53e1a3
+SHA1: 008c23e92e7a034483087d142ad660527ca1f7eb
+SHA256: 5529afcce8e7fc96dc71d04deaf03ccee5a8c3fce6b7307c6fb4c5083fdb4207
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+
+Package: libc6-dbg
+Source: glibc
+Version: 2.28-110.1
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 16425
+Depends: libc6 (= 2.28-110.1)
+Provides: libc-dbg
+Filename: ./libc6-dbg_2.28-110.1_armhf.deb
+Size: 10836156
+MD5sum: c9f772ac4756a93fb52ca9345237fc15
+SHA1: 49b5f95e6629e4324f6355421b54e7862e669fa9
+SHA256: 9a486c9392783378b8cb9fb20b67813028313aac56738e0aca4b4250fdd18de9
+Section: debug
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: detached debugging symbols
+ This package contains the detached debugging symbols for the GNU C
+ library.
+Build-Ids: 039c066533e1ea731517f6b63975754893a69d72 05bd9a56f326f961ab6741c0a0a4207f0cc85959 0886a00daf61693812cca241ba1843bb9d2c1072 091c0ddf73fd779be50cc71b04eeb84f98b0ee6e 0937e12b347b4bb76b94ee3f258b37224234da0e 09c5b99f730c527e15a6b304dc03a11298829948 0a2119cf6ef6bdab4ef2f6a02f1207e928725143 0e66ad907035c620975124425b4b692f448da6c0 10a36e15daaff22fd5e1eca5752d5f2172b81145 12e7ce9092073c6dad6f53b8c882e841cbd87fa1 131ac1092acc057ebbf4fb1c0e5515faeea000f9 13a2287d347dc8b4e7ef80b9d5512d6913db5767 1412a9c8b5c84cc34b1ea3d2da27ae30c2e3a0c3 15baabb3b84cd26d3a046b7bda7dc3bbe73f76c7 166009e30e97eba2e9a90ff0e8bad8f17d835958 16c77dab25aab206d0404ee91d448b4b05cd4ae1 17db23eda83cb654b8b3fe6873fa5a8098968e60 18c54c2ef7db9406f8772124c45508ebedad9f23 1a6ec9e7fa9d15b1a660a64d26cabedbf3819fec 1a96182f9690a92a5ca82af9f2c082930f61c96c 1c2f485843854d2230f5d3244bb631e00c40c257 1c30e9a51cf4a890df73383bb266e58011acf588 1cb605636db667706b50747b9f1e1c9aab0eb0d3 1d976353573cd5291f37f9f9f52a4be4a386b75d 1dc0bf44892299ee05ed07e80f99efb4402b3a47 1e235a397d329ad497f8ec942581cdc0b7fbadf4 20e4e37d1e55dd52677f5279dc49d63b2f25ac3a 21839eccfb5246163098ec6a40408e029fc036e5 2230df5c501334bac1404b393bc2c7a4862a030e 224927a91f89811ef45b58fa8d1515db031cee9a 22de87c706df5bf4d1ba002a4db31a6e0d33f705 23cadb022b78e3362c4d6d83c710de6452e9821a 244b9cb429895bacb7dbe881d811b0704090297d 24891d233f3e1e576cae946aab17ad392b66e020 24e31be3412710b6a698946d93e61c8efda478d5 24f76d4f591c9b46efe6182611eb6633c24e62e2 2576b5539964d79cc85a4a9d94671e22644acb6e 267e73ebabc61094a2358cf23423f876854ce463 275220bf52bd5d26ec113e13b2c4ab930c5c8592 2824234eafb7b868fd2ebfa97707de739cb545db 29ea87d4dfa116db0166f8b3e7d4f9e1d9a69f60 2ac4994a274ee36cc559da9927cf25404015d45d 2ae39f863ab51b170e3eba4f81428288d473ac2e 2b40db6d57544ee60defc281349a158abab245e0 2d0f1c66dc17a4ecbcbf2991b91d749c46fba0d0 2d105ed6725412a967a499f47922dadf92610b5c 2e9938348b4f98f55830baca7820c2453445e7b1 311078d6ad8d8a8ec422defa650c75fd6dcfd942 31e75ded0c34a5c209ba32a90f5cba123107f88a 32cfab4948ce4f078d9b6f7aee7a22ec3431d969 33330b85926159b3ca52666ed55ffd5978d3fc33 337ec9d8f25a8f0e91568bdb8630a23d6754b9b1 3416be7b7ac1c70c0554e9cbdc6a1aa3a367dec3 34ab7052dc4bfd2ac053e766807f86f436f9fe4c 3804af21a5d736c4485034d9adbacf38f62ab25b 3835b0a8b5faf0f4bfc45a92fdcb476a150e26bb 3845c5e216e581c1b0b5884d6a433ba341dece4c 38b42425b290ffe207d9c99dff3c010329ef2b80 391322927acb606568ffdcfc1f8778b6be71f931 3a78848f60b1653f345020de89c31ba3c8e036e1 3aaa2dccc7a0c01046f9aa57ac54b092b4964ac2 3b45f37ec9ce324f812c9108bf504d1aa30bfd10 3b9c124bdc1b600dd06018226f02aa7571f439e7 3bc917253253a7901f847296bab609b64a23b2af 3c643d30fd690b957fd9049df7ddd159c2d856f7 3d9fbddb46aba5fa82bef3610e4eae8bf2402dde 3f58648925922b94bd4d10ba1a82ee12cd5aaa86 3f76ae329c6991fb390e287840fe405046e41b19 401f749b52d2a30ca2eb9afc88f23a09fd83219b 404ea7992ea308f7abbf1d18515cd6e2f1045cef 405dd766568a5bda1d1b5221b26b21419dfda05a 413909f8aa3b52226995dfd52ce6dcf82291dffd 4171b5f61ba838bb937b7220b2fd304865c43749 423755e72b9e1c108b686864c8ebfe76db08c972 43660bbbd90e2cdcdea2c981f1b4cca0bf6e4f8c 43e98431b8e3742706b7495e517e27268cfde098 43f9b033c73456edc258c9ab7c7237f7a74f1cf1 45356bfa49735de70b79fdc2da84e68ccd2ab143 45d766dbe1265fa0324af3bf05f2763646194e68 46683bba8df070f71c8ba6d99a3eae16a7df0918 48db8c494e33dae22a16ff453fb9a2cab0e561fb 49201682d291ed81e93c8019ab9614562d4c06d5 4b8ce613e2a8c6a04f2484e95cf8ca64e5649e60 4c46df3b3cceeb7c8cce39015816f5640f3bc91b 4cc837085a7e71a882a3bc1c6aa471a29f6bedeb 4e6cd8fc2d9a92f9e92e817efd92808afd125072 4ef1cb92e046b43cf5748a88c4519fe1d4d0decb 4f80be85b83d21360dcd7f0a966ac4a400d88dc9 50083ca33323b6fe5d05a8525f7375511cb36829 50179e56fa2e5fcda312f987da869f10939947ff 517fe3e0b09ab28a0399850ca4aa6766558921e6 525c198b31e8fb9910e95e9d6a9b4fdcbf164b70 52687a3e30679fa6ce78fae75fbcc0f49ac9d13f 530d56e55af6fa352f17e70ae0a85a7dc089e51e 536b6bff71d677cb7981882cedbabafb3d5f0e4e 547bf722ec2a1caeebcfab0da7e61b9b2cd96bf0 54c90d4b92ee5764f9468c3fe14f31c9d51435da 55b1ee83cb822d204b03cf23ed349cf11b527b55 57c114a82f9cefae097a95bc5b7cf1d5c45620be 57d86c400c9dfc7b252d775bdd0f221b5e4c7e7a 5887dd75c07290eb9a6aa0650b4078e80089aecf 58905599515910c57fac123ad6bbc4c105c4e033 58915be89a056704e5462cfa7e383bce30df3251 59fc53283b042b1d2172955f19a3d9bb25d8f83a 5a2d77f717a5354dafdebca8f7389f38435528f0 5bbb074a6d4093b194a8b1cfd67e7aba007746b3 5c07664e4ad6b31df499c77720935a5c75d923c0 5f20da9bf1a905f972fecc1d372cc905e9ff76fb 5f3963046f11ef4e4df1a9ba401e2daf380a3951 5f4205601e1c5632dd25302f367cac363d939771 5f5bdc3cf0fc3dbb8d6f7b342da9bf4307078260 62881b63dae003c81cd08b1ae24afcabb7f4d156 62c8ea858275c79995f842fd452112da6d8b16cd 62d466ed96b508f41e0e3ad041ca7aeade9a2b2f 63232616f5c8668c998216b21db84b2c8f017125 634a2c247a5e33109f8546027a06eb2a1ce3854b 64cff7a465d49ea754c77360af7be1400bfd16ff 653e6d9fa9d3e50ee72b3ba0278ef7d31e9b41d7 66131004ae2d574396f79acc4f56cd309556da58 66678c1fb2df7559596e744eced708448d4d28df 6669fde8dc77bc72f6c846548d8326b22194cb36 679a817f397f93970a253450889808c196936423 6815a7250a2bab9c325fa353ee8098582fde172f 6bd3d2eeb5f5bd99249788e19f42bd9132538f25 6c366d596e2b7ebab96fb6cc1f9450f42a3b7add 6ca9d3490e194adff02beaab7f3691973357d17f 6d3a0e62f6c39ae9203bc63da7abfc857b3d37c1 6f95b58cd297939d364c79ed6a4d893542e692a2 73787a5d52227d1c383a9b6c5e8ba863f4c70d3c 739e328a2366b1956b2a7aa232a326cf585f4c57 73fa93e8a7c574ba5c07832cd814a4b7d7e3a7c3 777d28b2c0ae6950762eb7ed8ba795b306df017f 779e59a17bb66f322a089d899da8e2f5653fcc50 77cf0f6e01f7ba3cf73a38179b7346a03c3b06b4 78c2d955b644e7f36515e7053b28433e68be6f5f 79f3f4ed620bbe22ed7483e5c4a3e2a15f1f5a67 7a55d900a54fb0f3e16349cf8c7eca7322557f3d 7cceac6c6d319616034a2c5dc7384c60995188db 7d1318343fd2293bf9d96ad4c990342e2626e76e 800c565586e5a3e3211858fa151a3e3290472252 80131ccd068a00e1d6d3b51092c2592a2097eb71 80ecb095d6fff0f6157835d6ffadbed62ebaf1de 81557e7e90795a9baa01742cb06701e98ecdf9d5 81b4104a151c7c62a3ac0e56b63b6028f0822b4d 81f5c1993b24e9d145358ea412ad96d1193fefed 8309d9a3757d934bd9245868894fc629ba98bb9e 84de7f86098deacde1c6b56b366c9d6d06b67f30 851fdf3049ac9073c494827299c73b34330552a8 85b434b5ea1f502ce73a05e8acfa74b344754309 878d01dc078d9b6488e601612a80c908db61afe3 8955688e5b4da146e3e7d3fccc0a469e9a5c578f 899f0e727cce49b6df71c52fb2799f4c6af0b789 8b55ff28a781174de61072c19bb6fcbbf137ba43 8b99415611cc9a979c5fad6bba95d43b2df2c131 8c7ff26255fbea98e3c320bfa197a669305fd333 8cb63a59f55925912f16ec1bb6c9132f2726a993 8f60a2d8e40e1679a0392efc56534c8982c3edf6 916d7f39470beb5660cd5e923dde689677da24be 91bfbe4d6dfe1d3523a10999f50615a0cba8e1b9 9221a51b13f5fe733bcd5cca2ce2608426b84c19 93a0899b02bdaed5477434632f8eb183339c133b 9443c5611aa8d5d64f1e9a4734d85f514cf4f9f3 9451afa5689ca48e1b01f31d0e8cb8c0ea52ce9e 950f9c2aa860fb5d80431e853b6b6acf779b0505 957131be839884b5eb39e51779c06fcc8d0ab16d 97dac1cacaa3932c1759860deb5b19cf5495b2be 98b205233cd06c75cb3b0bb93099de09fd3abd53 98c02eccaab05a42fc9d8ef4fdd9736c25ce0655 994fa74ea3fa5762951982a4f7e640c6d7a4b47f 9b1ab235b95131661d8557e77b3f7f7c46a32c18 9c7ed8f8fe69886c3da383e9c123ccc1f55a7baf 9d4e8b94f15ccf11e2180e430189a79050bd10ce 9d8be8c1f52bef61856473f917d2f120779cee72 9f3c6cc6ee67b97fd9871551636358ada8db7d7b 9fbf33c90180311d19f12311daec9261e0d7d4aa a02b9d170663d5f546db9be2bffbca1136491846 a0c5e2386fba1a34ab814683866c5613f63f5257 a10c1aabd7e4ad62902bef6f101f6d0e175e70c0 a175053b905a1db442632aead63b458c71037d57 a421c9eaa2e6e2db6612902c5230cf0df5dd5c2f a7ef7f69d94b645ab7aeff147c3a29f2d9173bf2 a84f36d493fa7b18871459a9e68da067173d887e a8817705a1541840fb5b015d7a108b15ec570981 a99ade9499e2a9c925ba14b56c881e245662c487 a9ecf7aa1be391ab90bb30a8a497503c1fea0329 aa715fc090d05c194252d55c9b0a87068caaf578 aac77e60e483a7c9f75a5d44000103e65a801217 acd3af645c9314fded8b7ba8a41ecdc03a3faf7f aea1c89d30f3405a3cd74ca03092238d892dcb53 aff82e102802b1f535d77023d6574d83d4123aa6 b032bc2732ed71218e106edcad931ba470899255 b0c2c18f8aa06b8723379fbaabbbeb87ad2b2c6a b29f10931780bd3ebfebd3de6ca37e9e3e2dcb71 b32503bc7a66fc4f0fe51ff71d7b166829403834 b738ac402cc53d994e4ccf4623da5f06a7f76bd6 b95a5f9ad9d6574af3bb45e1570f5640f42975b2 ba9eb458613da93651a70f36bb13691cf7cf2b1f baa57798c7dcd8e01a086bafa24f975120e74443 bc2462e35f95513c540715a80ba89c47373de14d bdf99c3ea8d016af4bb6be3b14af705dd529f535 be0c1aa39a0fc69dcef6cb3b538caea2f989651d bf4747a981956e13046bcaa262bbbe2e79b8fe5c bf91cd21105864355bae940de8dbfd035b1ae0d7 c068d28c8b078a95d0f0e1043fd1858de59d8b76 c1deb61e0580168beb842c65a12965c1a39dfcc5 c56a8c8a34af01048c563d9ececdbace04597361 c640b5896f360f4096d84b2eb5f656a4da7b0af6 c7ad13d8a647be89a830350a85018792f58019f2 c7b42f5bcc6f47c07a0bde2124803bb06cd0622c c81b8d47df1d788e0707e3a22ab9f8285eb2b9a7 c81e4d6691350e0acd7a394776d7178bb14e8a6c c8825c15e099450aed4d2874791838089606b7c5 c90d6d5ec4461687f26ccda9297df575d0098259 c993370e17bf47ab3a00d330f256489b77ec9124 c9c6ab55287baf2b01895c2ac3c9cd642930629e ca830d90cd5fe18e85b9b36a662a3a057cbfcd71 caae1b8f3de4066e715893bb1d7ebc8af9978491 cbaf6edd3ffdce73d81ba7b64ff5929c42aa034b cc8789d65f9e7b516c21b470e935493d5e053d11 cd015fd7c47e5df91bbd5fde777f71cc75ee75a9 cebeaa0317091f3e0db6df7f82f6e26fc91b4944 d069fdcef135de185f1498a8568efa9879aa89e5 d24fab9f8249ca2c89fdb88a0d364679ab313db6 d4718372a118ebe06298496616fed681ea085e1b d7c179a73d9aed52f86c9bd9441e39191a3bf713 d836e23bc6ca2cad647d89ae84eafda1215e03f1 d9c5e427cdd2b4916160e39efe207ed76e8904e6 d9f47a110e6628cfd7b6a065b44a0df9cb97b531 db776647dc4bba52b3803e059b8abda9002a4d42 dbb7ba6269f25ac496cf9cea09fa85138fc6ddff dc8cb9032311e28c19badbd9ef91c9ed4fcc66c3 de583cb8604e39eedd1fbf2edbebd3417658c437 df7d837ceea85008672335337993187d6dfcc86a dfd3d2368f9397ff4eba061aa2c423813797d2f4 dfec700f5674a024d6aac63f65d2d04df999dcf1 e0e83c60e2781b4b6559fa4800481524e90b0c94 e3c811c090c87c67181a2a9a7095b0e12aee6a0b e58ccca46340e063bf359434e7bed96791b58878 e5ae40063a0dea0c24314c7bb1a2ccb3965d005a e67e5fdf684f07102fa4bc52de8325dcbad5d55e e6b32292e751d4dc09be749cd65ddab9de8585ba e6c80bf7a6ac41070833da70cd457e3255886dcc e711a4b7de59351b7a09bdddcec149ab378d95f7 e746e4a16c5b2e842490aba93b4368d7fcc437a6 e7589ee58f1a6e32e9d1da50cdd6a6d6ca2dfe4c e883a164c344fc4497d784c0169f7eb8cb62b237 e8a84aa93916ffa6f9a75ab6aa1c6d94c44d2a3a e959060950b183730973e8102f209e9829ee872e e9e4f26f1787e162591d7a9388e34e948b51e494 ea25213baf231d68591ada3ed77d8b43db4a3b39 ea80b3288e30a3058b02385ba986a6e1e1f8ad3f ea9b6462f5120c188d27a95051c96de672a18f66 eaf957392199cdc8d71255d5e4113c4a4ad2cfc0 ebd876b8dc01ef02d05bef432f0a9c74e00a89c3 ec6039b9bde550af83f89333e29678d393f488a7 ecb4310ed831060c04fc2eba34f91b9fa4a755b2 eed3c0bcfb7254dfa849dad40f2a6d77c8727d22 efbb3449ef4dab2f65740393ac9312c17e191f65 f05e8df68371fa5dafa801774fa315f329043b48 f09b4fa30d6de731822917eb13da91d4b43067e0 f0c0e3b5a322a53151aacb769eb7fec4259f0cd0 f112de1f12aec3b56d39aa204b0ca10385da0436 f113b9a1c3c7f87f894c8078892c5c694d381e69 f18c5837cea26245ab78ff2563896d068d94de7b f1e7f8a1c6389ac7e4ff6bf373ed1b09161e655b f208e6b32987eafc2c7c75a45aa02ead43048faf f4c239b3f3e6d85079a41fbc51fb56f5c4fcb624 f60c29cf1c637179fed8e41c02145b96ab32aa65 f8e6ebfc6dcb55584aaba45919a1e25159cf9842 fd144392a60c68bea2f9536548b67f3328ab1bae fd90d6fd763aad2d503652342ca28bbfb0e6b5be fe4b1a19b0875762cc8ea65292ebe4af88e79c20 ff52c50be7b26a2b67ab3c03d326d1256957e429 ff74f3a1d17bb4da8ef58e20eb8b5eb896ee22e3 ff7efccfa033fe60db62a21a90f3cbd43f0a5503
+
+Package: libc6-dev
+Source: glibc
+Version: 2.28-110.1
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 11923
+Depends: libc6 (= 2.28-110.1), libc-dev-bin (= 2.28-110.1), linux-libc-dev
+Suggests: glibc-doc, manpages-dev
+Conflicts: libc0.1-dev, libc0.3-dev, libc6.1-dev
+Breaks: binutils (<< 2.26), binutils-gold (<< 2.20.1-11), cmake (<< 2.8.4+dfsg.1-5), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2), gcc-4.6 (<< 4.6.0-12), libhwloc-dev (<< 1.2-3), libjna-java (<< 3.2.7-4), liblouis-dev (<< 2.3.0-2), liblouisxml-dev (<< 2.4.0-2), libperl5.26 (<< 5.26.1-3), make (<< 3.81-8.1), pkg-config (<< 0.26-1)
+Provides: libc-dev
+Filename: ./libc6-dev_2.28-110.1_armhf.deb
+Size: 2149328
+MD5sum: 3678ebc4c260afb19ee2ad88bf23c4c4
+SHA1: 12ceaf6a8a64bd0a4b24066096550ee7fc0fb642
+SHA256: 61ae637c86d9e017e4b0761bdcb4937df088d540f8419758d754af3b36ecd3a1
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Development Libraries and Header Files
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
+
+Package: libc6-pic
+Source: glibc
+Version: 2.28-110.1
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 4828
+Depends: libc6 (= 2.28-110.1)
+Conflicts: libc-pic
+Provides: glibc-pic, libc-pic
+Filename: ./libc6-pic_2.28-110.1_armhf.deb
+Size: 1256868
+MD5sum: 2eab2ec0d3f2abf442c0e6d93f6f45fe
+SHA1: c1c67f567640627b7373560c3d43430572179a38
+SHA256: 08bdefb7077da855db601fd9a35c9de4dca23c764ed6ad0c55791483cbfd42d2
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: PIC archive library
+ Contains an archive library (ar file) composed of individual shared objects.
+ This is used for creating a library which is a smaller subset of the
+ standard libc shared library. The reduced library is used by debian-installer
+ and may be useful for custom installation media and in embedded systems.
+
+Package: locales
+Source: glibc
+Version: 2.28-110.1
+Architecture: all
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 16107
+Depends: libc-bin (>> 2.28), libc-l10n (>> 2.28), debconf (>= 0.5) | debconf-2.0
+Replaces: manpages-fr-extra (<< 20141022)
+Filename: ./locales_2.28-110.1_all.deb
+Size: 4058572
+MD5sum: 762609fe55c1f5a9e223fa455cb0507c
+SHA1: 329d560ff6195d76a56a54f4d9736abb5998ed10
+SHA256: f4fb3e12d30f9524c41f78d2793a8ee7b3b3c545edbbce8e5d7fc155de88c1ee
+Section: localization
+Priority: standard
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: National Language (locale) data [support]
+ Machine-readable data files, shared objects and programs used by the
+ C library for localization (l10n) and internationalization (i18n) support.
+ .
+ This package contains tools to generate locale definitions from source
+ files (included in this package). It allows you to customize which
+ definitions actually get generated. This is a space-saver over how this
+ package used to be, with all locales generated by default. This created
+ a package that unpacked to an excess of 30 megs.
+
+Package: locales-all
+Source: glibc
+Version: 2.28-110.1
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 221264
+Depends: libc-l10n (>> 2.28)
+Breaks: locales (<< 2.13-17)
+Filename: ./locales-all_2.28-110.1_armhf.deb
+Size: 10774228
+MD5sum: 7dd82eace0c758c0e13293135df208c1
+SHA1: be98abb176fa2c6f990ca064657f8bd47d752915
+SHA256: 1636062b91adeda2c407f88fcd6924eeb77cba1e1ea583af46be70ef9be7ab9a
+Section: localization
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Precompiled locale data
+ This package contains the precompiled locale data for all supported locales.
+ A better alternative is to install the locales package and only select
+ desired locales, but it can be useful on a low-memory machine because some
+ locale files take a lot of memory to be compiled.
+
+Package: multiarch-support
+Source: glibc
+Version: 2.28-110.1
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 235
+Depends: libc6 (>= 2.13-5)
+Filename: ./multiarch-support_2.28-110.1_armhf.deb
+Size: 215196
+MD5sum: cc3318db50ae92fb372d7194e86d7b98
+SHA1: a46236c5f93d2efc0e30e9d5fac19ab021d47205
+SHA256: 4ee6b4c77be007c0851e0798bf68e0068f06d3decc5410c7cbf57b1f17d48bc1
+Section: oldlibs
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: Transitional package to ensure multiarch compatibility
+ This is a transitional package used to ensure multiarch support is present
+ in ld.so before unpacking libraries to the multiarch directories.  It can
+ be removed once nothing on the system depends on it.
+
+Package: nscd
+Source: glibc
+Version: 2.28-110.1
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 366
+Depends: lsb-base (>= 3.0-6), libaudit1 (>= 1:2.2.1), libc6 (>> 2.28), libc6 (<< 2.29), libcap2 (>= 1:2.10), libselinux1 (>= 2.0.82)
+Filename: ./nscd_2.28-110.1_armhf.deb
+Size: 273188
+MD5sum: c868d8d12f2ca27556d6248a9cbb341c
+SHA1: 9563cd977e8563db517f35489e2bd8c98ca35710
+SHA256: bedefc188d8cc975976b4a4f2e251164970608a81ffd98a7411f2027c42612fd
+Section: admin
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Name Service Cache Daemon
+ A daemon which handles passwd, group and host lookups
+ for running programs and caches the results for the next
+ query. You should install this package only if you use
+ slow services like LDAP, NIS or NIS+.
+
+Package: nscd-dbgsym
+Source: glibc
+Version: 2.28-110.1
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 352
+Depends: nscd (= 2.28-110.1)
+Filename: ./nscd-dbgsym_2.28-110.1_armhf.deb
+Size: 322140
+MD5sum: 3ac5cf50e8a4a259527f41f3de3ed388
+SHA1: 0290b7f83ab8196787f5c743ee02453b8805e144
+SHA256: b16c4b79bc270691396be94ff4663131d1ab3076ffddacedd108a7498ed61390
+Section: debug
+Priority: optional
+Description: debug symbols for nscd
+Build-Ids: a4589b74f096772290925b1e84ea0a0c43b99fcb
+
