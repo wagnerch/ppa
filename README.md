@@ -2,9 +2,9 @@
 
 This repository contains the GNU C library forked from Debian glibc 2.28-10 with some additional patches to support Widevine 4.10.2252.0 or later on ARM-based devices.
 
-This PPA is not required for the following Debian Buster derivative operating systems, as the necessary patches are already installed:
-* Raspberry Pi OS 10 (Buster), libc6 2.28-10+rpt2+rpi1 or later
-
+This PPA is not required for the following Debian Buster derivative operating systems:
+* Raspberry Pi OS 10 (Buster), libc6 2.28-10+rpt2+rpi1 or later.  Available through regular OS update channels (apt).
+* OSMC (Kodi 19), libc6 2.28-110.1 or later.  See [here](https://discourse.osmc.tv/t/widevine-add-ons-stopped-working-from-01-09/90684) for instructions.
 
 ```sh
 wget -qO - https://wagnerch.github.io/ppa/buster/KEY.gpg |sudo apt-key add -
